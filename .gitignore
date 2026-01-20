@@ -1,3 +1,8 @@
+# Environment files with secrets
+.env
+.env.*
+.env.local
+
 # Python virtual environment - root-level venv
 Lib/
 Include/
