@@ -39,8 +39,7 @@ py -3.11 -m venv .\venv
 # Install dependencies
 pip install -r requirements.txt
 
-# Configure OpenAI key (PowerShell session)
-$env:OPENAI_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+# Configure OpenAI key (see below)
 ```
 
 Mac/Linux activation alternative:
@@ -49,10 +48,20 @@ Mac/Linux activation alternative:
 source venv/bin/activate
 ```
 
-You can also store your key in a local `.env` file:
+### API Key Configuration
+
+**Recommended:** Store your key in a local `.env` file in the project root:
 
 ```
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+This method is more reliable than setting the environment variable directly in PowerShell, as it persists across sessions and avoids issues with variable scope.
+
+Alternatively, you can set it as a PowerShell session variable (less reliable):
+
+```powershell
+$env:OPENAI_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
 ---
