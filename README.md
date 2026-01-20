@@ -1,7 +1,7 @@
-
 # CrewAI Terraform Generator (Local Use)
 
-This project uses [CrewAI](https://docs.crewai.com/) agents to generate Terraform modules from official Terraform Registry markdown files. This README documents local setup and usage only.
+This project uses [CrewAI](https://docs.crewai.com/) agents to generate Terraform modules from official Terraform Registry markdown files. \
+Created by [Gerard de Jongh](https://github.com/gerardjongh) and [Nico Baburek](https://github.com/IdifixNL). This README documents local setup and usage only.
 
 ---
 
@@ -96,3 +96,6 @@ $env:OPENAI_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 - The folders modules/, schemas/, and wiki/ are kept locally and excluded from version control via .gitignore.
 - Ensure your environment is activated before running any scripts.
+
+---
+
